@@ -8,10 +8,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// By Will
+using UnityEngine.SceneManagement;
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    // Health Information By Will
+    public float health = 10;
+
     //speed and movement variables
     public float speed;
     public float airSpeed;
@@ -208,8 +214,16 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            myRb.velocity = Vector2.zero;
-            transform.position = RespawnPoint;
+            if(health > 0)
+            {
+                myRb.velocity = Vector2.zero;
+                transform.position = RespawnPoint;
+                health--;
+            }
+            else
+            {
+                SceneManager.LoadScene("Lose Scene");
+            }
         }
     }
 }
