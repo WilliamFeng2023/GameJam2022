@@ -222,7 +222,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("Lose Scene");
+                SceneManager.LoadScene("LostScene");
             }
         }
     }

@@ -16,7 +16,9 @@ public class BobbingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /**
         float y = Mathf.PingPong(Time.time * speed, 1) * 6 - 3;
         gameObject.transform.position = new Vector3(0, y, 0);
+    **/
     }
 }
