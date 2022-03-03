@@ -17,8 +17,18 @@ public class FollowingCamera : MonoBehaviour
     public float shakeTime = 0;
     public float shakeMagnitude = 0;
 
-    // Start is called before the first frame update
-    void Start()
+
+
+    public float minPosition = -10.0f; // left border
+    public float maxPosition = 10.0f; //  right border
+
+        
+
+
+
+
+// Start is called before the first frame update
+void Start()
     {
         
     }
@@ -26,15 +36,18 @@ public class FollowingCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if the calculated edge of the scene is reached, stop the camera from moving. Code Credit: https://stackoverflow.com/questions/51868854/limiting-2d-camera-movement-in-unity-to-edge-of-my-map
+        
+        
         //testing
-       /* if(Input.GetKeyDown(KeyCode.G))
-        {
-            TriggerShake(1, 1);
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TriggerShake(1, 3);
-        }*/
+        /* if(Input.GetKeyDown(KeyCode.G))
+         {
+             TriggerShake(1, 1);
+         }
+         if (Input.GetKeyDown(KeyCode.H))
+         {
+             TriggerShake(1, 3);
+         }*/
     }
 
     private void FixedUpdate()
@@ -42,7 +55,14 @@ public class FollowingCamera : MonoBehaviour
         Vector3 newPos = target.transform.position;
         newPos.z = transform.position.z;
 
-        if(shakeTime > 0)
+
+        if(newPos.x > maxPosition)
+            newPos.x = maxPosition;
+        if (newPos.x < minPosition)
+            newPos.x = minPosition;
+
+
+        if (shakeTime > 0)
         {
             newPos += Random.insideUnitSphere.normalized * shakeMagnitude;
             shakeTime -= Time.fixedDeltaTime;
