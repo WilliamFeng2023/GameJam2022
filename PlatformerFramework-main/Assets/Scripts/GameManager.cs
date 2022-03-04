@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     //when made make sure this is the only manager, and make the manager persistant through levels
     private void Awake()
     {
