@@ -16,7 +16,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     // Health Information By Will
-    public static float health = 10;
+    public static float health = 5;
 
     //speed and movement variables
     public float speed;

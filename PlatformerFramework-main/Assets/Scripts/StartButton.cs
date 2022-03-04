@@ -16,6 +16,7 @@ public class StartButton : MonoBehaviour
     public void LevelLoad()
     {
         SceneManager.LoadScene(LevelToLoad);
+        // Added by William Feng
     }
 
     public void ResetData()
