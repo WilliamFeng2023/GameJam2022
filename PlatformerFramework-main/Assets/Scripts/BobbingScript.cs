@@ -1,24 +1,29 @@
-/**
- * Bobbing Script
- * Made by Will
- * Started: 3/2/2022
- * Finished: ...
- * **/
+/*****************************************
+ * Edited by: William Feng
+ * Implemented: 3/3/2022
+ * Description: Up and Down Movement
+ * *************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BobbingScript : MonoBehaviour
 {
-    public GameObject gameObject;
-    public float speed;
+    [SerializeField]
+    float height = 0.5f;
+    [SerializeField]
+    float speed = 5f;
+    // Start is called before the first frame update
+    Vector3 pos;
+    void Start()
+    {
+        pos = transform.position;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        /**
-        float y = Mathf.PingPong(Time.time * speed, 1) * 6 - 3;
-        gameObject.transform.position = new Vector3(0, y, 0);
-    **/
+        float newY = Mathf.Sin(Time.time * speed) * height + pos.y;
+        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 }
