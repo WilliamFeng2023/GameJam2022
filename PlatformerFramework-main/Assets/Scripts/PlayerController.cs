@@ -16,7 +16,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     // Health Information By Will
-    public float health = 10;
+    public static float health = 10;
 
     //speed and movement variables
     public float speed;
@@ -214,15 +214,17 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            if(health > 0)
+            
+            if (health > 1)
             {
                 myRb.velocity = Vector2.zero;
                 transform.position = RespawnPoint;
                 health--;
+                GameManager.score--;
             }
             else
             {
-                SceneManager.LoadScene("Lose Scene");
+                SceneManager.LoadScene("LostScene");
             }
         }
     }

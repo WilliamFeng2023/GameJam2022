@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public static UnityEvent ScoreUpdate = new UnityEvent();
 
     //score property and int behind it
-    private static int _score = 0;
+    private static int _score = (int)PlayerController.health;
     public static int score
     {
         get
