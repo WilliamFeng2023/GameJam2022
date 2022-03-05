@@ -88,7 +88,7 @@ public class GhostController : MonoBehaviour
             jumps = extraJumps;
         }
         //check if jump can be triggered
-        if (Input.GetAxisRaw("Jump") == 1 && jumpPressed == false && isGrounded == true && isClimbing == false)
+        if (Input.GetAxisRaw("Jump1") == 1 && jumpPressed == false && isGrounded == true && isClimbing == false)
         {
             myAud.PlayOneShot(jumpNoise);
             myRb.drag = airDrag;
@@ -102,7 +102,7 @@ public class GhostController : MonoBehaviour
             }
             jumpPressed = true;
         }
-        else if (Input.GetAxisRaw("Jump") == 1 && jumpPressed == false && jumps > 0 && isClimbing == false)
+        else if (Input.GetAxisRaw("Jump1") == 1 && jumpPressed == false && jumps > 0 && isClimbing == false)
         {
             myAud.PlayOneShot(jumpNoise);
             myRb.drag = airDrag;
@@ -117,7 +117,7 @@ public class GhostController : MonoBehaviour
             jumpPressed = true;
             jumps--;
         }
-        else if (Input.GetAxisRaw("Jump") == 0)
+        else if (Input.GetAxisRaw("Jump1") == 0)
         {
             jumpPressed = false;
             jumpTimer = 0;
@@ -142,7 +142,7 @@ public class GhostController : MonoBehaviour
 
         //ladder things
 
-        moveInputV = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("Jump");
+        moveInputV = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("Jump1");
         //check for the ladder if around the player
         RaycastHit2D hitInfo = Physics2D.Raycast(groundCheck.position, Vector2.up, ladderDist, whatIsLadder);
 
