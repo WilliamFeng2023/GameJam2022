@@ -64,6 +64,10 @@ public class PlayerController : MonoBehaviour
 
     //animation
     private Animator myAnim;
+
+    // Players
+    public GameObject aliveTwin;
+    public GameObject ghostTwin;
     
 
     // Start is called before the first frame update
@@ -82,7 +86,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        moveInputH = Input.GetAxisRaw("Horizontal");
+        moveInputH = Input.GetAxisRaw("Horizontal1");
         if (isGrounded == true)
         {
             jumps = extraJumps;
@@ -142,7 +146,7 @@ public class PlayerController : MonoBehaviour
 
         //ladder things
 
-        moveInputV = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("Jump");
+        moveInputV = Input.GetAxisRaw("Vertical1") + Input.GetAxisRaw("Jump");
         //check for the ladder if around the player
         RaycastHit2D hitInfo = Physics2D.Raycast(groundCheck.position, Vector2.up, ladderDist, whatIsLadder);
         
@@ -171,7 +175,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //horizontal movement
-        moveInputH = Input.GetAxisRaw("Horizontal");
+        moveInputH = Input.GetAxisRaw("Horizontal1");
         //animator settings
         if(moveInputH == 0)
         {

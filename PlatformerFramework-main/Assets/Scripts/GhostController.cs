@@ -82,7 +82,7 @@ public class GhostController : MonoBehaviour
     private void Update()
     {
 
-        moveInputH = Input.GetAxisRaw("Horizontal1");
+        moveInputH = Input.GetAxisRaw("Horizontal");
         if (isGrounded == true)
         {
             jumps = extraJumps;
@@ -142,7 +142,7 @@ public class GhostController : MonoBehaviour
 
         //ladder things
 
-        moveInputV = Input.GetAxisRaw("Vertical1") + Input.GetAxisRaw("Jump");
+        moveInputV = Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("Jump");
         //check for the ladder if around the player
         RaycastHit2D hitInfo = Physics2D.Raycast(groundCheck.position, Vector2.up, ladderDist, whatIsLadder);
 
@@ -171,7 +171,7 @@ public class GhostController : MonoBehaviour
         }
 
         //horizontal movement
-        moveInputH = Input.GetAxisRaw("Horizontal1");
+        moveInputH = Input.GetAxisRaw("Horizontal");
         //animator settings
         if (moveInputH == 0)
         {
