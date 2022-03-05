@@ -36,8 +36,7 @@ void Start()
     // Update is called once per frame
     void Update()
     {
-        // if the calculated edge of the scene is reached, stop the camera from moving. Code Credit: https://stackoverflow.com/questions/51868854/limiting-2d-camera-movement-in-unity-to-edge-of-my-map
-        
+       
         
         //testing
         /* if(Input.GetKeyDown(KeyCode.G))
@@ -55,7 +54,7 @@ void Start()
         Vector3 newPos = target.transform.position;
         newPos.z = transform.position.z;
 
-
+        //code credit Ryan Scheppler
         if(newPos.x > maxPosition)
             newPos.x = maxPosition;
         if (newPos.x < minPosition)
