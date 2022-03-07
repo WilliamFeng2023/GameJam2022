@@ -52,6 +52,7 @@ void Start()
     private void FixedUpdate()
     {
         Vector3 newPos = target.transform.position;
+        newPos.y += 2;
         newPos.z = transform.position.z;
 
         //code credit Ryan Scheppler
