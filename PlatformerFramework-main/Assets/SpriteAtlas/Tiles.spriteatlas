@@ -265,6 +265,10 @@ SpriteAtlas:
   - {fileID: -2209401061123471698, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 1018328791618719094, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 6731733094262721628, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
+  - {fileID: 4981707335037514821, guid: 8dae17fda567bf644ae033289a3401cc, type: 3}
+  - {fileID: -277385339821502588, guid: 8dae17fda567bf644ae033289a3401cc, type: 3}
+  - {fileID: 6820799085251626347, guid: 8dae17fda567bf644ae033289a3401cc, type: 3}
+  - {fileID: -4845420347899302947, guid: 8dae17fda567bf644ae033289a3401cc, type: 3}
   - {fileID: 21300000, guid: f03c8d0fe28f96b46ab309b17f173700, type: 3}
   - {fileID: 21300000, guid: 9448701fdbdfbdd4bb6d7a8e22c982cb, type: 3}
   - {fileID: 21300000, guid: 44c0081faf7b73e41a81428f187e0372, type: 3}
@@ -486,6 +490,10 @@ SpriteAtlas:
   - tileset_96
   - tileset_95
   - tileset_94
+  - pixel_TwinAlive_Idle_3
+  - pixel_TwinAlive_Idle_2
+  - pixel_TwinAlive_Idle_1
+  - pixel_TwinAlive_Idle_0
   - pixel_TwinAlive_Draft
   - Square
   - Logo.MotherDearest
