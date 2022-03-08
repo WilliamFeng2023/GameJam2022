@@ -16,7 +16,8 @@ using UnityEngine.SceneManagement;
 public class GhostController : MonoBehaviour
 {
     // Health Information By Will
-    public static float health = 5;
+    public static int MAXHEALTH = 5;
+    public static float health = MAXHEALTH;
 
     //speed and movement variables
     public float speed;
@@ -220,7 +221,7 @@ public class GhostController : MonoBehaviour
                 myRb.velocity = Vector2.zero;
                 transform.position = RespawnPoint;
                 health--;
-                GameManager.score--;
+                GameManager.ghostHealth--;
             }
             else
             {

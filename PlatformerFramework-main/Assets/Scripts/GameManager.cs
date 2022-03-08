@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
 
     //event to listen to for the score change
     public static UnityEvent ScoreUpdate = new UnityEvent();
-    //public static UnityEvent ScoreUpdate2 = new UnityEvent();
 
     //score property and int behind it
     private static int score_ = (int)PlayerController.health;
@@ -32,6 +31,22 @@ public class GameManager : MonoBehaviour
         {
             score_ = value;
             ScoreUpdate.Invoke();
+        }
+    }
+
+    // Health for ghost twin by William Feng
+    public static UnityEvent GhostUpdate = new UnityEvent();
+    private static int ghostHealth_ = (int)GhostController.health;
+    public static int ghostHealth
+    {
+        get
+        {
+            return ghostHealth_;
+        }
+        set
+        {
+            ghostHealth_ = value;
+            GhostUpdate.Invoke();
         }
     }
 

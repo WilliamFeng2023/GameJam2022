@@ -1,14 +1,14 @@
 /*****************************************
- * Edited by: Ryan Scheppler
- * Last Edited: 1/27/2021
- * Description: Add to the TMP Pro text object to keep score updated.
+ * Edited by: William feng
+ * Last Edited: 2/7/2022
+ * Description: Basically a duplicate of Ryan's ScoreText, but meant for the ghost
  * *************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ScoreText : MonoBehaviour
+public class GhostHealthText : MonoBehaviour
 {
     TMP_Text myText;
     // Start is called before the first frame update
@@ -16,18 +16,18 @@ public class ScoreText : MonoBehaviour
     {
         myText = GetComponent<TMP_Text>();
         ChangeText();
-        GameManager.ScoreUpdate.AddListener(ChangeText);
+        GameManager.GhostUpdate.AddListener(ChangeText);
     }
 
     public void ChangeText()
     {
-        myText.text = "Health: " + GameManager.score;
-        
+        myText.text = "Health: " + GameManager.ghostHealth;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
