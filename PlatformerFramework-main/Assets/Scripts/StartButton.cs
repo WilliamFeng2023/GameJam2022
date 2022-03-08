@@ -21,7 +21,11 @@ public class StartButton : MonoBehaviour
 
     public void ResetData()
     {
+        // Resets the health, made by William Feng
         PlayerController.health = PlayerController.MAXHEALTH;
         GameManager.score = (int)PlayerController.health;
+
+        GhostController.health = GhostController.MAXHEALTH;
+        GameManager.ghostHealth = (int)GhostController.health;
     }
 }
