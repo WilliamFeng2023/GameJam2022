@@ -63,6 +63,7 @@ SpriteAtlas:
   - {fileID: -1986914867161763858, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: 2355461983139839047, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: -670163557928789229, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
+  - {fileID: 21300000, guid: 94fb182723ccc9146a8977b20c8261d3, type: 3}
   - {fileID: 9145588197540752857, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
   - {fileID: -3347984106645726015, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
   - {fileID: -6386380331874166012, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
@@ -292,6 +293,7 @@ SpriteAtlas:
   - FlyingSlimeAttack_2
   - FlyingSlimeAttack_1
   - FlyingSlimeAttack_0
+  - pixel_UI_LevelPassed (1)
   - FlyingSlimeIdle_1
   - FlyingSlimeIdle_0
   - FlyingSlimeIdle_3
