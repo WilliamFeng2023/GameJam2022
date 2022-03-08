@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 8dae17fda567bf644ae033289a3401cc
+guid: ffbdc081defde4647bbfd3e1da65526a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4845420347899302947
-    second: pixel_TwinAlive_Idle_0
+      213: 7349726237633008418
+    second: pixel_TwinAlive_Idle (1)_0
   - first:
-      213: 6820799085251626347
-    second: pixel_TwinAlive_Idle_1
+      213: -7075041397758424838
+    second: pixel_TwinAlive_Idle (1)_1
   - first:
-      213: -277385339821502588
-    second: pixel_TwinAlive_Idle_2
+      213: 6412783173129003246
+    second: pixel_TwinAlive_Idle (1)_2
   - first:
-      213: 4981707335037514821
-    second: pixel_TwinAlive_Idle_3
+      213: 6880922315995932117
+    second: pixel_TwinAlive_Idle (1)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel_TwinAlive_Idle_0
+      name: pixel_TwinAlive_Idle (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb2300addb91ccb0800000000000000
-      internalID: -4845420347899302947
+      spriteID: 223db7692197ff560800000000000000
+      internalID: 7349726237633008418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel_TwinAlive_Idle_1
+      name: pixel_TwinAlive_Idle (1)_1
       rect:
         serializedVersion: 2
         x: 64
@@ -138,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b658bb041a858ae50800000000000000
-      internalID: 6820799085251626347
+      spriteID: af80d6b755760dd90800000000000000
+      internalID: -7075041397758424838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel_TwinAlive_Idle_2
+      name: pixel_TwinAlive_Idle (1)_2
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48fc90ac087862cf0800000000000000
-      internalID: -277385339821502588
+      spriteID: ee0e4ffc158cef850800000000000000
+      internalID: 6412783173129003246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixel_TwinAlive_Idle_3
+      name: pixel_TwinAlive_Idle (1)_3
       rect:
         serializedVersion: 2
         x: 64
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5447edf4d64922540800000000000000
-      internalID: 4981707335037514821
+      spriteID: 5d5eef3c362fd7f50800000000000000
+      internalID: 6880922315995932117
       vertices: []
       indices: 
       edges: []
