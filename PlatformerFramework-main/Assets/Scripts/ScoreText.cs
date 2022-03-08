@@ -19,11 +19,11 @@ public class ScoreText : MonoBehaviour
         GameManager.ScoreUpdate.AddListener(ChangeText);
     }
 
-    private void ChangeText()
+    public void ChangeText()
     {
         myText.text = "Health: " + GameManager.score;
-       
     }
+
     // Update is called once per frame
     void Update()
     {

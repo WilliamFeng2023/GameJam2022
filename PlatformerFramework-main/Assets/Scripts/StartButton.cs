@@ -21,6 +21,7 @@ public class StartButton : MonoBehaviour
 
     public void ResetData()
     {
-        GameManager.score = 0;
+        PlayerController.health = PlayerController.MAXHEALTH;
+        GameManager.score = (int)PlayerController.health;
     }
 }

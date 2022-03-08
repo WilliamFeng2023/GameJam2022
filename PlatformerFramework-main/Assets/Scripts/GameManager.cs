@@ -10,23 +10,27 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject aliveTwin;
+    public GameObject ghostTwin;
+
     //allow this component to be grabbed from anywhere and make sure only one exists
     public static GameManager Instance;
 
     //event to listen to for the score change
     public static UnityEvent ScoreUpdate = new UnityEvent();
+    //public static UnityEvent ScoreUpdate2 = new UnityEvent();
 
     //score property and int behind it
-    private static int _score = (int)PlayerController.health;
+    private static int score_ = (int)PlayerController.health;
     public static int score
     {
         get
         {
-            return _score;
+            return score_;
         }
         set
         {
-            _score = value;
+            score_ = value;
             ScoreUpdate.Invoke();
         }
     }
@@ -63,7 +67,8 @@ public class GameManager : MonoBehaviour
 
     public static void ResetGame()
     {
-        score = 0;
+        //PlayerController.health = PlayerController.MAXHEALTH;
+        //score = (int)PlayerController.MAXHEALTH;
     }
 
 }
