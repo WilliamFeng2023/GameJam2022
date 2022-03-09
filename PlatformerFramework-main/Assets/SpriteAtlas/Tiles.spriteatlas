@@ -53,6 +53,10 @@ SpriteAtlas:
   - {fileID: 7349726237633008418, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
   - {fileID: 6880922315995932117, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
   - {fileID: 6412783173129003246, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
+  - {fileID: -5085946723511554757, guid: c139a7c35427551419b0688588c81797, type: 3}
+  - {fileID: -3849162474234519184, guid: c139a7c35427551419b0688588c81797, type: 3}
+  - {fileID: -9122524509481241955, guid: c139a7c35427551419b0688588c81797, type: 3}
+  - {fileID: -5668955813268760583, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: 21300000, guid: 8bc362a6948f0ac4795075da16aae7e2, type: 3}
   - {fileID: 4413142109597815103, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: -3674992999376901249, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
@@ -165,6 +169,14 @@ SpriteAtlas:
   - {fileID: -7336076203705889676, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -4344611882063969491, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -5241486731584646207, guid: f99a3879764308a4d92d87d841829522, type: 3}
+  - {fileID: -2709755789896729998, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: 6532588170260694895, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: 1667581115924694955, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: -2685384640188926734, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: 7558852227983970803, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: -3231824075198154319, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: -4350153518804603771, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: 8007422655681145375, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
   - {fileID: 1671283345461455480, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: -3638366375080524030, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: 3774374558072554424, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
@@ -274,6 +286,14 @@ SpriteAtlas:
   - {fileID: -2209401061123471698, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 1018328791618719094, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: 6731733094262721628, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
+  - {fileID: 4211226204953908475, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: -899267425592388352, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: -5437882551692549905, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: 2918098918162922372, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: 1724499897742903986, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: -6653224184752883780, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: -7759565263889161109, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
+  - {fileID: 8961391715612548879, guid: d5ca2cfe47cc4cf4c86ca7fd0a8f213a, type: 3}
   - {fileID: 21300000, guid: f03c8d0fe28f96b46ab309b17f173700, type: 3}
   - {fileID: 21300000, guid: 9448701fdbdfbdd4bb6d7a8e22c982cb, type: 3}
   - {fileID: 21300000, guid: 44c0081faf7b73e41a81428f187e0372, type: 3}
@@ -283,6 +303,10 @@ SpriteAtlas:
   - pixel_TwinAlive_Idle (1)_0
   - pixel_TwinAlive_Idle (1)_3
   - pixel_TwinAlive_Idle (1)_2
+  - pixel_TwinShadow_run_1
+  - pixel_TwinShadow_run_0
+  - pixel_TwinShadow_run_3
+  - pixel_TwinShadow_run_2
   - pixel_TwinShadow_Draft
   - FlyingSlimeAttack_8
   - FlyingSlimeAttack_7
@@ -395,6 +419,14 @@ SpriteAtlas:
   - cavesofgallet_tiles_72
   - cavesofgallet_tiles_8
   - cavesofgallet_tiles_9
+  - pixel_TwinAlive_run_2
+  - pixel_TwinAlive_run_3
+  - pixel_TwinAlive_run_0
+  - pixel_TwinAlive_run_1
+  - pixel_TwinAlive_run_6
+  - pixel_TwinAlive_run_7
+  - pixel_TwinAlive_run_4
+  - pixel_TwinAlive_run_5
   - rotating_coin_0
   - rotating_coin_1
   - rotating_coin_2
@@ -504,6 +536,14 @@ SpriteAtlas:
   - tileset_96
   - tileset_95
   - tileset_94
+  - pixel_TwinAlive_Idle-8_4
+  - pixel_TwinAlive_Idle-8_5
+  - pixel_TwinAlive_Idle-8_6
+  - pixel_TwinAlive_Idle-8_7
+  - pixel_TwinAlive_Idle-8_0
+  - pixel_TwinAlive_Idle-8_1
+  - pixel_TwinAlive_Idle-8_2
+  - pixel_TwinAlive_Idle-8_3
   - pixel_TwinAlive_Draft
   - Square
   - Logo.MotherDearest
