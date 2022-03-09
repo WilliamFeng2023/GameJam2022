@@ -49,6 +49,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 01c9bfb01d3d1584680f2b05302bca43, type: 3}
   - {fileID: -7075041397758424838, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
   - {fileID: 7349726237633008418, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
   - {fileID: 6880922315995932117, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
@@ -62,6 +63,7 @@ SpriteAtlas:
   - {fileID: -3849162474234519184, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -9122524509481241955, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -5668955813268760583, guid: c139a7c35427551419b0688588c81797, type: 3}
+  - {fileID: 21300000, guid: ee3a4d0407c9d394e8b025778677e486, type: 3}
   - {fileID: 21300000, guid: 8bc362a6948f0ac4795075da16aae7e2, type: 3}
   - {fileID: 21300000, guid: 6bb841d662777114698fe3d3f6936779, type: 3}
   - {fileID: 4413142109597815103, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
@@ -187,6 +189,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fa4dd5fc26a89e148bed97f8c7b87d09, type: 3}
   - {fileID: 21300000, guid: ff45fcfce3dfdfb43a10fb8e9cd50c20, type: 3}
   - {fileID: 21300000, guid: 55467d0d4e3956a469356e21f58acdab, type: 3}
+  - {fileID: 21300000, guid: a2bcc12d4cfbb5c479fc35bb94bd583f, type: 3}
   - {fileID: 1671283345461455480, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: -3638366375080524030, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: 3774374558072554424, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
@@ -197,6 +200,7 @@ SpriteAtlas:
   - {fileID: 5387897019352416549, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: 3340004424929419039, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: 5038537178737896021, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
+  - {fileID: 21300000, guid: 19879d9d56a3bca4b967f71f57ea1d28, type: 3}
   - {fileID: 8621815960616643281, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: -7131273655155896711, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
   - {fileID: -6831599063569703212, guid: d37e19ad10172ab4fb53c4f7e74a4e55, type: 3}
@@ -310,6 +314,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 44c0081faf7b73e41a81428f187e0372, type: 3}
   - {fileID: 21300000, guid: beba46cfa551ed4419a471652146d973, type: 3}
   m_PackedSpriteNamesToIndex:
+  - bookshelf
   - pixel_TwinAlive_Idle (1)_1
   - pixel_TwinAlive_Idle (1)_0
   - pixel_TwinAlive_Idle (1)_3
@@ -323,6 +328,7 @@ SpriteAtlas:
   - pixel_TwinShadow_run_0
   - pixel_TwinShadow_run_3
   - pixel_TwinShadow_run_2
+  - bedside table
   - pixel_TwinShadow_Draft
   - pixel_vase
   - FlyingSlimeAttack_8
@@ -448,6 +454,7 @@ SpriteAtlas:
   - key
   - mommy hot painting
   - Bed (2)
+  - UI.healthbar (1)
   - rotating_coin_0
   - rotating_coin_1
   - rotating_coin_2
@@ -458,6 +465,7 @@ SpriteAtlas:
   - rotating_coin_7
   - rotating_coin_8
   - rotating_coin_9
+  - bookshelf (2)
   - tileset_39
   - tileset_38
   - tileset_48

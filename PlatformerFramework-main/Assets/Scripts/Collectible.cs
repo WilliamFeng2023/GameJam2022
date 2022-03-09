@@ -40,21 +40,18 @@ public class Collectible : MonoBehaviour
             float AliveXPos = AliveTwin.transform.position.x;
             float AliveYPos = AliveTwin.transform.position.y;
             Vector3 offset = new Vector3(0.0f, AliveYPos + 0.2f, 0.0f);
-            transform.position = GhostTwin.transform.position;
+            transform.position = AliveTwin.transform.position + offset;
+            print(AliveTwin.transform.position.ToString() + transform.position.ToString());
         }
         if (pickedUpGhost == true)
         {
             float GhostXPos = GhostTwin.transform.position.x;
             float GhostYPos = GhostTwin.transform.position.y;
             Vector3 offset = new Vector3(0.0f, GhostYPos + 0.2f, 0.0f);
-            transform.position = GhostTwin.transform.position;
+            transform.position = GhostTwin.transform.position + offset;
         }
     }
 
-    public float getXAxis()
-    {
-        return transform.position.x;
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
