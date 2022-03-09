@@ -53,6 +53,11 @@ SpriteAtlas:
   - {fileID: 7349726237633008418, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
   - {fileID: 6880922315995932117, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
   - {fileID: 6412783173129003246, guid: ffbdc081defde4647bbfd3e1da65526a, type: 3}
+  - {fileID: 1726038507491253387, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
+  - {fileID: -5777799906048277592, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
+  - {fileID: -8979285703005234418, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
+  - {fileID: -7469031990168749964, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
+  - {fileID: -4919656543723769729, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
   - {fileID: -5085946723511554757, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -3849162474234519184, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -9122524509481241955, guid: c139a7c35427551419b0688588c81797, type: 3}
@@ -177,6 +182,8 @@ SpriteAtlas:
   - {fileID: -3231824075198154319, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
   - {fileID: -4350153518804603771, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
   - {fileID: 8007422655681145375, guid: c7e2dceb239c961439f1deb4da2e1a52, type: 3}
+  - {fileID: 21300000, guid: 55467d0d4e3956a469356e21f58acdab, type: 3}
+  - {fileID: 21300000, guid: a2bcc12d4cfbb5c479fc35bb94bd583f, type: 3}
   - {fileID: 1671283345461455480, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: -3638366375080524030, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: 3774374558072554424, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
@@ -303,6 +310,11 @@ SpriteAtlas:
   - pixel_TwinAlive_Idle (1)_0
   - pixel_TwinAlive_Idle (1)_3
   - pixel_TwinAlive_Idle (1)_2
+  - Bed.Animation (1) (1)_4
+  - Bed.Animation (1) (1)_1
+  - Bed.Animation (1) (1)_0
+  - Bed.Animation (1) (1)_3
+  - Bed.Animation (1) (1)_2
   - pixel_TwinShadow_run_1
   - pixel_TwinShadow_run_0
   - pixel_TwinShadow_run_3
@@ -427,6 +439,8 @@ SpriteAtlas:
   - pixel_TwinAlive_run_7
   - pixel_TwinAlive_run_4
   - pixel_TwinAlive_run_5
+  - Bed (2)
+  - UI.healthbar (1)
   - rotating_coin_0
   - rotating_coin_1
   - rotating_coin_2
