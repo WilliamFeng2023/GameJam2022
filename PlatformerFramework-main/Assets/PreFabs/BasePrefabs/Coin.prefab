@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7855004461276386711}
   - component: {fileID: 7855004461276386712}
   - component: {fileID: 7855004461276386708}
-  - component: {fileID: 7855004461276386709}
+  - component: {fileID: 4148909899789100724}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -74,8 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1671283345461455480, guid: 950f927dbc9d7d146bfeab77e560f475,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: d87c380a960915f4792b02541fd68544, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 7855004461276386713}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8516e3a84dfca0c4dabb9412b40c852d, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -121,7 +120,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
---- !u!114 &7855004461276386709
+--- !u!114 &4148909899789100724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b50c96ac644af43b2e36545e4f0a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickedUpAlive: 0
+  pickedUpGhost: 0
   points: 10
-  PickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
-  SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
-    type: 3}
+  x: 7
+  PickUpNoise: {fileID: 0}
+  SpawnOnPickUp: {fileID: 0}
+  AliveTwin: {fileID: 0}
+  GhostTwin: {fileID: 0}
