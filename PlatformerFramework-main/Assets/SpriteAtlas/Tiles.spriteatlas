@@ -59,10 +59,15 @@ SpriteAtlas:
   - {fileID: -8979285703005234418, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
   - {fileID: -7469031990168749964, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
   - {fileID: -4919656543723769729, guid: 98b9d6b1900b50646935d3329e2ce170, type: 3}
+  - {fileID: 21300000, guid: e1bf8962562d5a246852fa76f78e1008, type: 3}
   - {fileID: -5085946723511554757, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -3849162474234519184, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -9122524509481241955, guid: c139a7c35427551419b0688588c81797, type: 3}
   - {fileID: -5668955813268760583, guid: c139a7c35427551419b0688588c81797, type: 3}
+<<<<<<< Updated upstream
+=======
+  - {fileID: 21300000, guid: 6675a0f323a271a48be2458420e69d9d, type: 3}
+>>>>>>> Stashed changes
   - {fileID: 21300000, guid: ee3a4d0407c9d394e8b025778677e486, type: 3}
   - {fileID: 21300000, guid: 8bc362a6948f0ac4795075da16aae7e2, type: 3}
   - {fileID: 21300000, guid: 6bb841d662777114698fe3d3f6936779, type: 3}
@@ -324,10 +329,15 @@ SpriteAtlas:
   - Bed.Animation (1) (1)_0
   - Bed.Animation (1) (1)_3
   - Bed.Animation (1) (1)_2
+  - chandelier (1) (1)
   - pixel_TwinShadow_run_1
   - pixel_TwinShadow_run_0
   - pixel_TwinShadow_run_3
   - pixel_TwinShadow_run_2
+<<<<<<< Updated upstream
+=======
+  - chandelier (base+chain)
+>>>>>>> Stashed changes
   - bedside table
   - pixel_TwinShadow_Draft
   - pixel_vase
