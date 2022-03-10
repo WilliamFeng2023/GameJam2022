@@ -11,6 +11,7 @@ public class Collectible : MonoBehaviour
 {
     public bool pickedUpAlive = false;
     public bool pickedUpGhost = false;
+    public bool hasTrophie = false;
 
     public int points = 10;
     public int x = 7;
@@ -39,15 +40,16 @@ public class Collectible : MonoBehaviour
         {
             float AliveXPos = AliveTwin.transform.position.x;
             float AliveYPos = AliveTwin.transform.position.y;
-            Vector3 offset = new Vector3(0.0f, AliveYPos + 0.2f, 0.0f);
+            Vector3 offset = new Vector3(0.0f, 0.9f, 0.0f);
             transform.position = AliveTwin.transform.position + offset;
-            print(AliveTwin.transform.position.ToString() + transform.position.ToString());
+            //print(AliveTwin.transform.position.ToString() + transform.position.ToString());
+            print(AliveYPos.ToString());
         }
         if (pickedUpGhost == true)
         {
             float GhostXPos = GhostTwin.transform.position.x;
             float GhostYPos = GhostTwin.transform.position.y;
-            Vector3 offset = new Vector3(0.0f, GhostYPos + 0.2f, 0.0f);
+            Vector3 offset = new Vector3(0.0f, 0.9f, 0.0f);
             transform.position = GhostTwin.transform.position + offset;
         }
     }
@@ -55,6 +57,7 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if(collision.gameObject.CompareTag("Player"))
         {
             
@@ -68,10 +71,14 @@ public class Collectible : MonoBehaviour
                 Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
             }
             pickedUpAlive = true;
+            hasTrophie = true;
+            print(hasTrophie);
         }
         else if(collision.gameObject.CompareTag("Player2"))
         {
             pickedUpGhost = true;
+            hasTrophie = true;
+            print(hasTrophie);
         }
     }
 }
