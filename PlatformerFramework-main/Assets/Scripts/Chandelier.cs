@@ -1,3 +1,4 @@
+// Made by Dane
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,8 @@ public class Chandelier : MonoBehaviour
         {
             GameObject Temp = Instantiate(Audio);
             item.SetActive(true);
-            Vector3 chandelierPos = gameObject.transform.position;
+            Vector3 offset = new Vector3(0.0f, 0.5f, 0.0f);
+            Vector3 chandelierPos = gameObject.transform.position + offset;
             item.transform.position = chandelierPos;
             gameObject.SetActive(false);
             //Destroy(gameObject);

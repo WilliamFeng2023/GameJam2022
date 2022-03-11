@@ -1,5 +1,6 @@
 /*****************************************
  * Edited by: Ryan Scheppler
+ * Edited by William Feng.
  * Last Edited: 1/27/2021
  * Description: Add this to objects thaht are picked up by the player for points and removed
  * *************************************/

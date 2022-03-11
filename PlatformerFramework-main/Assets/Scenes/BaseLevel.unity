@@ -8982,6 +8982,7 @@ MonoBehaviour:
   canBreak: 0
   text: {fileID: 0}
   key: {fileID: 2070205335}
+  keyItem: {fileID: 2070205334}
 --- !u!61 &1564524491
 BoxCollider2D:
   m_ObjectHideFlags: 0

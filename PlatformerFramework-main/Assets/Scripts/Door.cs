@@ -1,3 +1,4 @@
+// Edited by William Feng
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,7 @@ public class Door : MonoBehaviour
     public bool canBreak = false;
     public GameObject text;
     public Collectible key;
-    //public GameObject keyItem;
+    public GameObject keyItem;
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,7 +28,7 @@ public class Door : MonoBehaviour
                 Destroy(blocker);
                 Destroy(gameObject);
                 Destroy(key);
-                Destroy(key);
+                Destroy(keyItem);
                 SFXPlayer.PlayOneShot(openDoor);
             }
             else
