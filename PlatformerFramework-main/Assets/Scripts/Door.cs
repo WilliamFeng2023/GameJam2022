@@ -21,7 +21,7 @@ public class Door : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //textt.SetActive(true);
-            if (trophie.hasTrophie == true)
+            if (trophie.hasItem == true)
             {
                 Destroy(blocker);
                 Destroy(gameObject);

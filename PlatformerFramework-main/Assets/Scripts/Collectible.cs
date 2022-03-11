@@ -11,7 +11,7 @@ public class Collectible : MonoBehaviour
 {
     public bool pickedUpAlive = false;
     public bool pickedUpGhost = false;
-    public bool hasTrophie = false;
+    public bool hasItem = false;
 
     public int points = 10;
     public int x = 7;
@@ -22,10 +22,6 @@ public class Collectible : MonoBehaviour
 
     public GameObject AliveTwin;
     public GameObject GhostTwin;
-
- 
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -57,28 +53,26 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if(collision.gameObject.CompareTag("Player"))
+        AudioSource PAud = collision.gameObject.GetComponent<AudioSource>();
+        if (PAud != null)
         {
-            
-            AudioSource PAud = collision.gameObject.GetComponent<AudioSource>();
-            if(PAud != null)
-            {
-                PAud.PlayOneShot(PickUpNoise);
-            }
-            if(SpawnOnPickUp != null)
-            {
-                Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
-            }
+            PAud.PlayOneShot(PickUpNoise);
+        }
+        if (SpawnOnPickUp != null)
+        {
+            Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        { 
             pickedUpAlive = true;
-            hasTrophie = true;
-            print(hasTrophie);
+            hasItem = true;
+            print(hasItem);
         }
         else if(collision.gameObject.CompareTag("Player2"))
         {
             pickedUpGhost = true;
-            hasTrophie = true;
-            print(hasTrophie);
+            hasItem = true;
+            print(hasItem);
         }
     }
 }
