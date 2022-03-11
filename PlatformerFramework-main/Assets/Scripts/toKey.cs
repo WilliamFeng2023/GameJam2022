@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class toKey : MonoBehaviour
 {
-    public GameObject key;
-    public Collectible trophie;
+    public Collectible key;
+    public GameObject keyItem;
+    //public Collectible trophie;
     public GameObject AliveTwin;
     public GameObject GhostTwin;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        keyItem.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,10 +24,10 @@ public class toKey : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 6 && trophie.hasTrophie == true|| collision.gameObject.layer == 12 && trophie.hasTrophie == true)
+        if(collision.gameObject.layer == 6 && key.hasItem == true|| collision.gameObject.layer == 12 && key.hasItem == true)
         {
             Destroy(gameObject);
-            key.SetActive(true);
+            keyItem.SetActive(true);
         }
     }
 
