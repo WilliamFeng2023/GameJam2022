@@ -8980,10 +8980,8 @@ MonoBehaviour:
   openDoor: {fileID: 8300000, guid: 41e57848b8bf7d24e9b7d7730823eb33, type: 3}
   blocker: {fileID: 1154692432}
   canBreak: 0
-  textt: {fileID: 0}
-  woodParticle: {fileID: 0}
-  trophie: {fileID: 2070205335}
-  key: {fileID: 2070205334}
+  text: {fileID: 0}
+  key: {fileID: 2070205335}
 --- !u!61 &1564524491
 BoxCollider2D:
   m_ObjectHideFlags: 0
