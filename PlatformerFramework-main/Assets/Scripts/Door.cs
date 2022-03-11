@@ -8,41 +8,40 @@ public class Door : MonoBehaviour
     AudioSource SFXPlayer;
     public AudioClip openDoor;
 
+    // By William Feng
     public GameObject blocker;
     public bool canBreak = false;
-    public GameObject textt;
-    public GameObject woodParticle;
-    public Collectible trophie;
-    public GameObject key;
+    public GameObject text;
+    public Collectible key;
+    //public GameObject keyItem;
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // By William Feng, conditions to delete the door if met
         print("collided");
         if (collision.gameObject.tag == "Player")
         {
-            //textt.SetActive(true);
-            if (trophie.hasItem == true)
+            if (key.hasItem == true)
             {
                 Destroy(blocker);
                 Destroy(gameObject);
-                Destroy(trophie);
+                Destroy(key);
                 Destroy(key);
                 SFXPlayer.PlayOneShot(openDoor);
             }
             else
             {
                 print("False");
-                textt.SetActive(true);
+                text.SetActive(true);
             }
         }
-        textt.SetActive(true);
+        text.SetActive(true);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        canBreak = false;
-        textt.SetActive(false);
+        text.SetActive(false);
     }
 
     // Start is called before the first frame update

@@ -1,7 +1,8 @@
 /*****************************************
- * Edited by: Ryan Scheppler
- * Last Edited: 1/27/2021
- * Description: Add to an object with a trigger collider to detect when to turn on a different text object or not.
+ * Made by: Ryan Scheppler
+ * Edited by: William Feng
+ * Last Edited: 3/10/21
+ * Description: Edited OnTriggerEnter2D and OnTriggerExit2D
  * *************************************/
 using System.Collections;
 using System.Collections.Generic;
@@ -26,6 +27,7 @@ public class SignReading : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Added more conditions for different text to be read
         if(collision.gameObject.CompareTag("Player") && key.hasItem == false)
         {
             Text.SetActive(true);
@@ -38,6 +40,7 @@ public class SignReading : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        // Set Text2 to false visibility once the players are no longer in collision
         if (collision.gameObject.CompareTag("Player"))
         {
             Text.SetActive(false);
