@@ -19,9 +19,13 @@ public class Chandelier : MonoBehaviour
         if (collision.gameObject.tag == "Chandelier Collide")
         {
             GameObject Temp = Instantiate(Audio);
-            Destroy(gameObject);
-            Destroy(Temp, 5);
             item.SetActive(true);
+            Vector3 chandelierPos = gameObject.transform.position;
+            item.transform.position = chandelierPos;
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
+            Destroy(Temp, 5);
+            
             
         }
     }

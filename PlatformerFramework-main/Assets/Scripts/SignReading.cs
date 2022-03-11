@@ -10,6 +10,8 @@ using UnityEngine;
 public class SignReading : MonoBehaviour
 {
     public GameObject Text;
+    public GameObject Text2;
+    public Collectible key;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,13 @@ public class SignReading : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player") && key.hasItem == false)
         {
             Text.SetActive(true);
+        }
+        if (collision.gameObject.CompareTag("Player") && key.hasItem == true)
+        {
+            Text2.SetActive(true);
         }
     }
 
@@ -35,6 +41,8 @@ public class SignReading : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Text.SetActive(false);
+            Text2.SetActive(false);
         }
+
     }
 }

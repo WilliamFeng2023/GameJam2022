@@ -24,10 +24,9 @@ public class toKey : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 6 && key.hasItem == true|| collision.gameObject.layer == 12 && key.hasItem == true)
+        if(collision.gameObject.layer == 6 && key.hasItem == true)
         {
-            Destroy(gameObject);
-            keyItem.SetActive(true);
+            
         }
     }
 

@@ -12,7 +12,8 @@ public class Door : MonoBehaviour
     public bool canBreak = false;
     public GameObject textt;
     public GameObject woodParticle;
-    public Collectible trophie; 
+    public Collectible trophie;
+    public GameObject key;
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -26,6 +27,8 @@ public class Door : MonoBehaviour
                 Destroy(blocker);
                 Destroy(gameObject);
                 Destroy(trophie);
+                Destroy(key);
+                SFXPlayer.PlayOneShot(openDoor);
             }
             else
             {
@@ -52,11 +55,5 @@ public class Door : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && canBreak)
-        {
-            SFXPlayer.PlayOneShot(openDoor);
-            Destroy(blocker);
-            Destroy(gameObject);
-        }
     }
 }
